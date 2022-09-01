@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body.active {
+    background-color: rgb(26, 26, 26);
+}
+
+.calculator {
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 60px auto 0 auto;
+    padding: 0.1px 10px 30px 10px;
+}
+
+.calculator.active {
+    background-color: rgb(41, 41, 41);
+    box-shadow: -10px -10px 15px 5px rgba(172, 172, 172, 0.2);
+}
+
+#screen {
+    background-color: white;
+    box-shadow: inset 5px 5px 15px rgb(172, 172, 172);
+    border-radius: 10px;
+    height: 180px;
+    margin: 40px 30px 20px;
+    font-size: 60px;
+    text-align: right;
+    line-height: 180px;
+    padding: 0 20px;
+    font-family: consolas;
+    color: rgb(108, 110, 226);
+}
+
+#screen.active {
+    background-color: rgb(34, 34, 34);
+    box-shadow: inset -5px -5px 20px rgb(172, 172, 172, 0.2);
+    color: white;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    height: 80px;
+    width: 92px;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(204, 204, 204);
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: consolas;
+    font-weight: bold;
+}
+
+button.active {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    box-shadow: -5px -5px 15px rgb(56, 56, 56);
+}
+
+.topButtons {
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clearButton {
+    width: 208px;
+    background-color: rgb(255, 72, 72);
+    color: white;
+}
+
+.numberButtons {
+    display: inline-block;
+    width: 326px;
+    margin-left: 30px;
+}
+
+.midButtons {
+    margin: 0 20px;
+}
+
+.rightButtons {
+    display: inline-block;
+    width: 110px;
+    margin-left: 16px;
+}
+
+#sumButton {
+    background-color: rgb(1, 175, 1);
+    color: white;
+    height: 180px;
+}
+
+#equalsButton {
+    background-color: rgb(69, 159, 233);
+    color: white;
+}
+
+#themeButton {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    border: 2px solid black;
+    border-radius: 60px;
+    width: 45px;
+    height: 25px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 204, 204);
+}
+
+#themeButton::before {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left:2px;
+    transform: translateY(-52%);
+}
+
+#themeButton.active {
+    border-color: white;
+    background-color: black;
+    box-shadow: -5px -2px 10px 4px rgb(51, 51, 51);
+}
+
+#themeButton.active::before {
+    transform: translateX(98%);
+    top: 1px;
+    background-color: white;
+}
