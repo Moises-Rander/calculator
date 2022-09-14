@@ -31,7 +31,7 @@ body.active {
     text-align: right;
     line-height: 180px;
     padding: 0 20px;
-    font-family: consolas;
+    font-family: consolas, sans-serif;
     color: rgb(108, 110, 226);
 }
 
